@@ -12,23 +12,23 @@ class SlideThree extends HTMLElement {
 
                 <div class="slide_content_answer">
                     <div class="button_answer">
-                        <input type="radio" id="qOneAOne" name="qOneAOne" value="qOneAOne" checked>
-                        <label for="qOneAOne">Not at all</label>
+                        <input type="radio" id="qThreeAOne" name="qThreeAOne" value="qThreeAOne" checked>
+                        <label for="qThreeAOne">Not at all</label>
                     </div>                
                                 
                     <div class="button_answer">
-                        <input type="radio" id="qOneATwo" name="qOneATwo" value="qOneATwo">
-                        <label for="qOneATwo">Barely</label>
+                        <input type="radio" id="qThreeATwo" name="qThreeATwo" value="qThreeATwo">
+                        <label for="qThreeATwo">Barely</label>
                     </div>
 
                     <div class="button_answer">
-                        <input type="radio" id="qOneAThree" name="qOneAThree" value="qOneAThree">
-                        <label for="qOneAThree">Moderately</label>
+                        <input type="radio" id="qThreeAThree" name="qThreeAThree" value="qThreeAThree">
+                        <label for="qThreeAThree">Moderately</label>
                     </div>
 
                     <div class="button_answer">
-                        <input type="radio" id="qOneAFour" name="qOneAFour" value="qOneAFour">
-                        <label for="qOneAFour">Severely</label>
+                        <input type="radio" id="qThreeAFour" name="qThreeAFour" value="qThreeAFour">
+                        <label for="qThreeAFour">Severely</label>
                     </div>
                 
                 </div>

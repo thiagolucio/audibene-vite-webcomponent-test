@@ -14,23 +14,23 @@ class SlideFour extends HTMLElement {
 
                 <div class="slide_content_answer">
                     <div class="button_answer">
-                        <input type="radio" id="qOneAOne" name="qOneAOne" value="qOneAOne" checked>
-                        <label for="qOneAOne">As soon as possible</label>
+                        <input type="radio" id="qFourAOne" name="qFourAOne" value="qFourAOne" checked>
+                        <label for="qFourAOne">As soon as possible</label>
                     </div>                
                                 
                     <div class="button_answer">
-                        <input type="radio" id="qOneATwo" name="qOneATwo" value="qOneATwo">
-                        <label for="qOneATwo">Within the next few weeks</label>
+                        <input type="radio" id="qFourATwo" name="qFourATwo" value="qFourATwo">
+                        <label for="qFourATwo">Within the next few weeks</label>
                     </div>
 
                     <div class="button_answer">
-                        <input type="radio" id="qOneAThree" name="qOneAThree" value="qOneAThree">
-                        <label for="qOneAThree">Within the next few months</label>
+                        <input type="radio" id="qFourAThree" name="qFourAThree" value="qFourAThree">
+                        <label for="qFourAThree">Within the next few months</label>
                     </div>
 
                     <div class="button_answer">
-                        <input type="radio" id="qOneAFour" name="qOneAFour" value="qOneAFour">
-                        <label for="qOneAFour">I don't know</label>
+                        <input type="radio" id="qFourAFour" name="qFourAFour" value="qFourAFour">
+                        <label for="qFourAFour">I don't know</label>
                     </div>                
                 </div>
             </div>

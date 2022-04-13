@@ -12,23 +12,23 @@ class SlideTwo extends HTMLElement {
 
                 <div class="slide_content_answer">
                     <div class="button_answer">
-                        <input type="radio" id="qOneAOne" name="qOneAOne" value="qOneAOne" checked>
-                        <label for="qOneAOne">2 years old or less</label>
+                        <input type="radio" id="qTwoAOne" name="qTwoAOne" value="qTwoAOne" checked>
+                        <label for="qTwoAOne">2 years old or less</label>
                     </div>                
                                 
                     <div class="button_answer">
-                        <input type="radio" id="qOneATwo" name="qOneATwo" value="qOneATwo">
-                        <label for="qOneATwo">3 years old</label>
+                        <input type="radio" id="qTwoATwo" name="qTwoATwo" value="qTwoATwo">
+                        <label for="qTwoATwo">3 years old</label>
                     </div>
 
                     <div class="button_answer">
-                        <input type="radio" id="qOneAThree" name="qOneAThree" value="qOneAThree">
-                        <label for="qOneAThree">4 years old</label>
+                        <input type="radio" id="qTwoAThree" name="qTwoAThree" value="qTwoAThree">
+                        <label for="qTwoAThree">4 years old</label>
                     </div>
 
                     <div class="button_answer">
-                        <input type="radio" id="qOneAFour" name="qOneAFour" value="qOneAFour">
-                        <label for="qOneAFour">5 years old or more</label>
+                        <input type="radio" id="qTwoAFour" name="qTwoAFour" value="qTwoAFour">
+                        <label for="qTwoAFour">5 years old or more</label>
                     </div>
                 
                 </div>

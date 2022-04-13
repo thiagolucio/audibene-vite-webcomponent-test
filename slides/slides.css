@@ -1,4 +1,4 @@
-.slider {   
+.slider > * {   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,6 +94,12 @@ ul.slider_list li.active {
     cursor: pointer;    
     opacity: 15%;
     transition: 0.3s ease-in-out;   
+}
+
+.disabled, 
+.disabled img {
+    pointer-events: none;
+    opacity: 15%;
 }
 
 .slider .slider_button_next,

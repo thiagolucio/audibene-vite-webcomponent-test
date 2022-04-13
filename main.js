@@ -21,7 +21,6 @@ document.querySelector('#app').innerHTML = `
         </article>
         <div class="light_gray">
             <component-slides></component-slides>
-            <div class="slider"></div>
         </div>
     </div>
     <script src="/components/headline/headLine.js"></script>
