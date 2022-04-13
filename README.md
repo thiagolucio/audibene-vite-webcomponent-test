@@ -1,9 +1,15 @@
-# TESTE PARA 
+# AUDIBENE TEST
+
+- Web Component using JavaScript Vanilla
+- ViteJS to bundle. 
+
+- npm install
+- npm build
+- npm run dev
+- npm run preview
 
 
- - Foi necessário efetuar algumas mudanças no texto dentro do slide devido ao fato do modelo ser em Inglês e o Texto fornecido dos questionários ser em Português. Devido a isso foi necessário mudar levemente para uma melhor disposição do texto. 
-
-
+#### Questions in Slider:
 
 What has prevented you from getting hearing aids sooner?
 - Not sure if I need them
