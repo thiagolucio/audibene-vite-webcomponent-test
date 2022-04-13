@@ -1,0 +1,59 @@
+.headline {
+    width: 711px;
+    height: 268px;
+    position: relative;
+    margin: 50px 0;
+    
+}
+
+.headline_content {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #FFAE0D;
+    text-decoration-style: 0.5px solid;
+    position: absolute;
+}
+
+.headline_content  p {
+    white-space: wrap; 
+    width: 12em; 
+    overflow: hidden;
+    text-overflow: clip; 
+    margin: 16px 0 0 30px;
+}
+
+
+.headline_tarja {
+    width: 102px;
+    height: 268px;
+    position: absolute;
+    z-index: -1;
+    background: #FFAE0D;
+}
+
+@media (max-width: 660px) {
+
+    .headline {
+        height: 200px;
+    }
+    
+    .headline_content {
+        font-size: 1.9em;
+        width: 100%;
+    }
+
+    .headline_tarja {
+        width: 86px;
+        height: 166px;
+    }
+
+    .headline_content  p {
+        white-space: wrap; 
+        width: 11em; 
+        overflow: hidden;
+        text-overflow: clip; 
+        margin: 16px 0 0 23px;
+    }
+}

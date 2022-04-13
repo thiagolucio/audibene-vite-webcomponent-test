@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Pacifico&display=swap');
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body, section {
+    overflow-x: hidden; 
+}
+ol, ul  {
+    list-style: none;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.container {
+    max-width: 711px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 50px auto;
+}
+
+.hero_banner img, .headline img {
+    max-width: 100%;
+    height: auto;
+}
+
+article {
+    font-size: 21px;
+    line-height: 36px;
+}
+
+
+article p {margin: 20px 0;}
+
+.text_spotlight {
+    color: #295EA5;
+    font-weight: 700;
+}
+
+.Light_gray {
+    background: #F0F0F0;
+}
+
+@media (max-width: 711px) {
+    article {
+        padding: 0 16px;
+    }
+    
+}
+
+
+/* 
+.slider {   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16%;
+} */
+
+
+    
