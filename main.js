@@ -19,12 +19,9 @@ document.querySelector('#app').innerHTML = `
             <p><span class="text_spotlight">The result:</span> In 2020, Signia (formerly Siemens) finally revealed its ultimate secret weapon that is smaller, stronger, and smarter than ever before!
                 The device is called the Silk X – <span class="text_spotlight">and it will change your life.</span></p>
         </article>
-        <div class="Light_gray">
+        <div class="light_gray">
             <component-slides></component-slides>
-
-            <div class="slider">
-      
-            </div>
+            <div class="slider"></div>
         </div>
     </div>
     <script src="/components/headline/headLine.js"></script>

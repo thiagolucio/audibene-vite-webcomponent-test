@@ -9,7 +9,6 @@ class SlideOne extends HTMLElement {
                 
             <div class="slide_content">
                 <h3>What has prevented you from getting hearing aids sooner?</h3>
-
                 <div class="slide_content_answer">
                     <div class="button_answer">
                         <input type="radio" id="qOneAOne" name="qOneAOne" value="qOneAOne" checked>
@@ -18,7 +17,7 @@ class SlideOne extends HTMLElement {
                                 
                     <div class="button_answer">
                         <input type="radio" id="qOneATwo" name="qOneATwo" value="qOneATwo">
-                        <label for="qOneATwo">I can’t afford them</label>
+                        <label for="qOneATwo">I can't afford them</label>
                     </div>
 
                     <div class="button_answer">
@@ -28,14 +27,9 @@ class SlideOne extends HTMLElement {
 
                     <div class="button_answer">
                         <input type="radio" id="qOneAFour" name="qOneAFour" value="qOneAFour">
-                        <label for="qOneAFour">I’ve been too busy</label>
+                        <label for="qOneAFour">I've been too busy</label>
                     </div>
-                
                 </div>
-                
-
-
-
             </div>
         `;
     }

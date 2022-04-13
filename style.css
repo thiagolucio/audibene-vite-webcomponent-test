@@ -55,7 +55,7 @@ article p {margin: 20px 0;}
     font-weight: 700;
 }
 
-.Light_gray {
+.light_gray {
     background: #F0F0F0;
 }
 
@@ -64,17 +64,4 @@ article p {margin: 20px 0;}
         padding: 0 16px;
     }
     
-}
-
-
-/* 
-.slider {   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 16%;
-} */
-
-
-    
+}    
