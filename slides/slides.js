@@ -96,7 +96,7 @@ class Slides extends HTMLElement {
 
 
         // slides.forEach(index => {
-        //     console.log('Esta no Slide => ', index);
+        //     console.log('This is Slide?? => ', index);
         // });
 
     }
