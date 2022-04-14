@@ -11,30 +11,33 @@ template.innerHTML = `
 
 <link rel="stylesheet" href="slides/slides.css"/>      
                     
-                <div class="slider">
-                    <ul class="slider_list">
-                        <li id="slide_one">
-                            <slide-one></slide-one>
-                        </li>       
-                        <li id="slide_two">
-                            <slide-two></slide-two>                
-                        </li>       
-                        <li id="slide_three">
-                            <slide-three></slide-three>                
-                        </li>       
-                        <li id="slide_four">
-                            <slide-four></slide-four>                
-                        </li>        
-                        <li id="slide_five">
-                            <slide-five></slide-five>                
-                        </li>
-                    </ul>
-                    <button class="slider_button_prev" id="slider_button_prev">
-                        <img src="assets/arrow_left.svg"  alt="preview slide arrow" />
-                    </button>         
-                    <button class="slider_button_next" id="slider_button_next">
-                        <img src="assets/arrow_right.svg"  alt="next slide arrow"/>
-                    </button>          
+                <div class="slider fade_in">
+                        <ul class="slider_list">
+                            <li id="slide_one">
+                                <slide-one></slide-one>
+                            </li>       
+                            <li id="slide_two">
+                                <slide-two></slide-two> 
+                            </li>       
+                            <li id="slide_three">
+                                <slide-three></slide-three>                
+                            </li>       
+                            <li id="slide_four">
+                                <slide-four></slide-four>                
+                            </li>        
+                            <li id="slide_five">
+                                <slide-five></slide-five>                
+                            </li>
+                        </ul>
+                        <button class="slider_button_prev" id="slider_button_prev">
+                            <img src="assets/arrow_left.svg"  alt="preview slide arrow" />
+                        </button>         
+                        <button class="slider_button_next" id="slider_button_next">
+                            <img src="assets/arrow_right.svg"  alt="next slide arrow"/>
+                        </button>                        
+                </div>
+                <div class="footer_slider">
+                    <button class="btn_submit" id="btn_submit">Next</button>                
                 </div>
             `;
 
@@ -68,11 +71,11 @@ class Slides extends HTMLElement {
             index--;
 
             if (index < 0) {
-                index = slides.length - 1;
-                nextButton.disabled = false;
                 prevButton.disabled = true;
+                nextButton.disabled = false;
+                index = slides.length - 1;
             }
-            slides[index].classList.add('active');
+            slides[index].classList.add('active','fade_in_left');
         });
 
         // next button event listener
@@ -82,12 +85,12 @@ class Slides extends HTMLElement {
             index++;
 
             if (index >= slides.length) {
-                index = 0;
                 nextButton.disabled = true;
                 prevButton.disabled = false;
+                index = 0;
             }
 
-            slides[index].classList.add('active');
+            slides[index].classList.add('active','fade_in_right');
 
         });
 
