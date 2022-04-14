@@ -33,6 +33,13 @@ class SlideOne extends HTMLElement {
             </div>
         `;
     }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        this.shadowRoot.querySelector("input qOneAOne").innerText = this.getAttribute("checked");
+        this.shadowRoot.querySelector("input qOneATwo").innerText = this.getAttribute("checked");
+        this.shadowRoot.querySelector("input qOneAThree").innerText = this.getAttribute("checked");
+        this.shadowRoot.querySelector("input qOneAFour").innerText = this.getAttribute("checked");
+      }
 }
 
 customElements.define('slide-one', SlideOne);

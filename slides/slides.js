@@ -6,16 +6,12 @@ import './slide-five.js';
 
 import './slides.css';
 
-class Slides extends HTMLElement {
-    constructor() {
+const template = document.createElement("template");
+template.innerHTML = `
 
-        super();
-        this.attachShadow({ mode: 'open' })
-        // this.shadowRoot.appendChild(template.content.cloneNode(true));
-        this.shadowRoot.innerHTML = `
-            <link rel="stylesheet" href="slides/slides.css"/>      
+<link rel="stylesheet" href="slides/slides.css"/>      
                     
-                <div class="slider slide-in-blurred-right">
+                <div class="slider">
                     <ul class="slider_list">
                         <li id="slide_one">
                             <slide-one></slide-one>
@@ -29,7 +25,7 @@ class Slides extends HTMLElement {
                         <li id="slide_four">
                             <slide-four></slide-four>                
                         </li>        
-                        <li id="slide_four">
+                        <li id="slide_five">
                             <slide-five></slide-five>                
                         </li>
                     </ul>
@@ -42,20 +38,25 @@ class Slides extends HTMLElement {
                 </div>
             `;
 
+class Slides extends HTMLElement {
+    constructor() {
+
+        super();
+        this.attachShadow({ mode: 'open' })
+        this.shadowRoot.appendChild(template.content.cloneNode(true));
+
     }
 
     connectedCallback() {
+        
         const slideOne = this.shadowRoot.getElementById("slide_one");
         slideOne.classList.add('active');
 
-
-        // let slides = this.shadowRoot.querySelectorAll('.slider_list');
-        // let slides = document.querySelectorAll('.slider');
-
         let slides = this.shadowRoot.querySelectorAll('.slider_list li');
         let index = 0;
-        // console.log('slides', slides); 
-        
+
+        // console.log('slides', slides);
+
         let prevButton = this.shadowRoot.getElementById('slider_button_prev');
         let nextButton = this.shadowRoot.getElementById('slider_button_next');
 
@@ -67,49 +68,35 @@ class Slides extends HTMLElement {
             index--;
 
             if (index < 0) {
-                console.log('index', index);
                 index = slides.length - 1;
+                nextButton.disabled = false;
+                prevButton.disabled = true;
             }
             slides[index].classList.add('active');
         });
 
         // next button event listener
         nextButton.addEventListener('click', () => {
-            
+
             slides[index].classList.remove('active');
-            index++;          
+            index++;
 
             if (index >= slides.length) {
-                console.log('index', index);
                 index = 0;
-            } 
-            
+                nextButton.disabled = true;
+                prevButton.disabled = false;
+            }
+
             slides[index].classList.add('active');
+
         });
-
-
-
-
 
 
         // slides.forEach(index => {
         //     console.log('Esta no Slide => ', index);
-            
-        //     if (index < 0) {
-        //         prevButton.classList.add('disabled');
-        //         nextButton.classList.remove('disabled');
-        //     } 
-
-        //     if (index >= slides.length) {
-        //         nextButton.classList.add('disabled');
-        //         prevButton.classList.remove('disabled');
-
-        //     }
         // });
 
     }
-
-
 
 }
 
